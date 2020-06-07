@@ -11,6 +11,6 @@ import java.util.List;
 
 @Repository
 public interface DemandeStageRepository extends JpaRepository<DemandeStage, Long> {
-    @Query("select distinct ds from DemandeStage ds,Stagiaire s where s.demandeStages.stagiaire_id = :id and s.demandeStages.demande_stage_id= ds.id")
-    List<DemandeStage> findAllById(@Param("id") Long id);
+    /*@Query("select distinct ds from DemandeStage ds,Stagiaire s where s.demandeStages.stagiaire_id = :id and s.demandeStages.demande_stage_id= ds.id")
+    List<DemandeStage> findAllById(@Param("id") Long id);*/
 }
